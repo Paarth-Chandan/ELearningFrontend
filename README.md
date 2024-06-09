@@ -1,70 +1,113 @@
-# Getting Started with Create React App
+# E-Learning Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a full-stack E-Learning website developed using HTML, CSS, JavaScript, React.js (with Axios) for the frontend, and Java, Spring Boot, and MySQL for the backend.
 
-## Available Scripts
+## Introduction
 
-In the project directory, you can run:
+The E-Learning website provides a platform for students to access various courses, watch video tutorials, and track their progress. It includes user authentication, a course catalog, video playback, and progress tracking features.
 
-### `npm start`
+## Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- User Authentication (Login/Signup)
+- Course Catalog
+- Video Tutorials
+- Progress Tracking
+- Comments and Discussions
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Video
+https://github.com/Paarth-Chandan/ELearningFrontend/assets/135144621/20244371-c2a8-43f0-973a-a5ebf245df9e
 
-### `npm test`
+## Technologies Used
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Frontend
 
-### `npm run build`
+- HTML
+- CSS
+- JavaScript
+- React.js (Axios for API calls)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Backend
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- Java
+- Spring Boot
+- MySQL
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Installation
 
-### `npm run eject`
+### Prerequisites
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- Node.js
+- npm
+- Java (JDK 17)
+- MySQL
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Frontend Setup
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+1. Install the dependencies:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+    ```sh
+    npm install
+    ```
 
-## Learn More
+2. Start the frontend development server:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+    ```sh
+    npm start
+    ```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Backend Setup
 
-### Code Splitting
+1. Clone the repository:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+    ```sh
+    git clone https://github.com/Paarth-Chandan/ELearningFrontend.git
+    cd ELearningFrontend
+    ```
 
-### Analyzing the Bundle Size
+2. Set up MySQL database:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+    ```sql
+    CREATE DATABASE elearning_db;
+    ```
 
-### Making a Progressive Web App
+3. Update `application.properties` file with your MySQL credentials:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+    ```properties
+    spring.datasource.url=jdbc:mysql://localhost:3306/elearning_db
+    spring.datasource.username=YOUR_DB_USERNAME
+    spring.datasource.password=YOUR_DB_PASSWORD
+    spring.jpa.hibernate.ddl-auto=update
+    ```
 
-### Advanced Configuration
+4. Build and run the backend:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+    ```sh
+    cd backend
+    mvn clean package
+    java -jar target/ELearningBackend-0.0.1-SNAPSHOT.jar
+    ```
 
-### Deployment
+The application should now be running with the frontend accessible at `http://localhost:3000` and the backend accessible at `http://localhost:8080`.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## Usage
 
-### `npm run build` fails to minify
+1. Register a new user or log in with existing credentials.
+2. Browse the course catalog and select a course.
+3. Watch video tutorials and track your progress.
+4. Participate in discussions by adding comments.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Contributing
+
+Contributions are welcome! Please follow these steps to contribute:
+
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature-branch`).
+3. Make your changes and commit them (`git commit -m 'Add new feature'`).
+4. Push to the branch (`git push origin feature-branch`).
+5. Create a new Pull Request.
+
+## Contact
+
+- **Paarth Chandan** - [GitHub](https://github.com/Paarth-Chandan)
+
+Feel free to reach out if you have any questions or suggestions!
