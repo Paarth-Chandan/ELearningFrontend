@@ -15,7 +15,8 @@ The E-Learning website provides a platform for students to access various course
 - Comments and Discussions
 
 ## Video
-https://github.com/Paarth-Chandan/ELearningFrontend/assets/135144621/20244371-c2a8-43f0-973a-a5ebf245df9e
+
+https://github.com/Paarth-Chandan/ELearningFrontend/assets/135144621/1853692d-97f7-4d89-be0d-8efc41b106a7
 
 ## Technologies Used
 
